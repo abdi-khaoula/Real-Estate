@@ -1,0 +1,83 @@
+*{
+    --webit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: Open Sans;
+}
+.header{
+    background-color: black;
+    height: 80px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 20% 15% 10% 20% 20% 10%;
+    column-gap: calc(5%/5);
+}
+::placeholder{
+    color: rgb(173, 173, 173);
+}
+.header div{
+    display: flex;
+}
+input.dol{
+    width: 15%;
+}
+input.price{
+    width: 85%;
+}
+select{
+    text-align: center;
+}
+.header input:not(.dol, .price), .header select, .header button{
+    border: none;
+    border-radius: 3px;
+}
+.header .dol{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    border-right: 1px solid #ddd;
+    background-color: #f9f6f6;
+}
+.header .price{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 4px;
+    border: none;
+}
+button{
+    background-color: #0eaaa6;
+    color: white;
+}
+input:not(input.dol){
+    padding-left: 20px;
+}
+input.dol{
+    text-align: center;
+}
+input.dol::placeholder{
+    color: black;
+}
+select{
+    padding-left: 20px;
+    color: rgb(173, 173, 173);
+}
+option:not(:first-of-type){
+    color:black;
+}
+:focus{
+    outline: none;
+}
+.find{
+    background-color:#0eaaa6;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+span{
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+.find p{
+    font-style: italic;
+}
